@@ -1,0 +1,78 @@
+.search-bar {
+  display: block;
+  margin: 0 auto;
+  padding: 30px 80px;
+}
+.searchBox:hover input {
+  cursor: pointer;
+}
+.city-name {
+  color: #0b5ed7;
+  font-size: 20px;
+}
+.city-search {
+  border-color: #b8def0;
+  background-color: #b8def0;
+  color: #8a2be2;
+}
+.btn-primary:hover {
+  background: #83c1ff;
+  border-color: #97cff0;
+}
+.btn-secondary {
+  background-color: #8a2be2;
+  border-color: #8a2be2;
+}
+.btn-secondary:hover {
+  background-color: #ff9898;
+  border-color: #ff9898ec;
+}
+body {
+  font-family: "Hind Siliguri", sans-serif;
+}
+h1 {
+  color: #8a2be2;
+  font-size: 60px;
+  padding: 40px 60px;
+}
+h2 {
+  font-size: 25px;
+  color: #0b5ed7;
+}
+.weatherIconToday {
+  margin-top: -12px;
+  margin-bottom: 15px;
+}
+h4 {
+  font-size: 40px;
+  color: blueviolet;
+}
+h5 {
+  font-size: 18px;
+}
+h1,
+h2,
+h4 {
+  margin-top: -25px;
+}
+.extraWeatherInfo {
+  font-size: 15px;
+  color: #0b5ed7;
+  line-height: 0.8rem;
+}
+.card-header {
+  color: #8a2be2;
+}
+.card-title {
+  color: coral;
+}
+.highestTemp {
+  color: #8a2be2;
+}
+.lowestTemp {
+  color: rgb(0, 140, 255);
+}
+.divider {
+  color: #8a2be2;
+  height: 12px;
+}

@@ -4,16 +4,177 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>Hosted with <a href="https://www.netlify.com">Netlify</a></h1>
-    <form>
-      <input type="email" placeholder="Enter your email" id="email" />
-      <input type="password" placeholder="Enter your password" id="password" />
-      <input type="submit" value="Login" id="Login" />
-    </form>
-    <script src="script.js"></script>
+    <section class="vh-100">
+      <div class="container py-5 h-100">
+        <div
+          class="row d-flex justify-content-center align-items-center h-100"
+        >
+          <div class="col-md-9 col-lg-7 col-xl-5">
+            <div class="card mb-4 gradient-custom" style="border-radius: 25px">
+              <div class="card-body p-4">
+                <form id="city-search">
+                  <div class="search-bar">
+                    <label for="exampleInputCity" class="city-name"></label>
+                    <input
+                      placeholder="Search City..."
+                      type="search"
+                      class="city-search-input"
+                      id="exampleInputCity"
+                      aria-describedby="InputCitySearch"
+                    />
+                    <button type="submit" class="btn btn-search">Search</button>
+                    <button type="submit" class="btn btn-myLocation">
+                      <input
+                        class="location-image"
+                        type="image"
+                        src="src/region.png"
+                        style="background: transparent"
+                        width="40"
+                      />
+                    </button>
+                    <button type="submit" class="btn btn-Celsius" id="nowC">°C</button>
+                    <button type="submit" class="btn btn-Farenheit" id="nowF">°F</button>
+                  </div>
+                </form>
+                <b />
+              </div>
+            </div>
+
+            <img
+              src="src/cherry-927.png"
+              alt="girl-reading-in-the-park"
+              style="position: static; display: block; margin: 0 auto"
+              width="200px"
+            />
+
+            <div class="card mb-4 gradient-custom" style="border-radius: 25px">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between mb-4 pb-2">
+                  <div>
+                    <h1 class="display-2" id="currentTemp">35°C</h1>
+                    <div id="temperature-description">cloudy</div>
+                    <h2 id="city">
+                      Budapest
+                    </h2>
+                    <h3>14:59 <br /> <span class="dateToday">Wed, 16 Jun 2021</span> </h3>
+                  </div>
+                  <div>
+                    <img
+                      class="weatherIconToday"
+                      src="src/smiling sun.png"
+                      alt="smilingSun"
+                      width="100"
+                    />
+                    <br /> <br />
+                    <p class="humidity">Humidity: 98%</p>
+                    <p class="wind">
+                      Wind: 4 KPH SW <img src="src/wind.png" alt="wind"
+                      width="50"
+                    </p>
+                    <p class="realFeel">Real feel: 32°</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-4 gradient-custom" style="border-radius: 25px">
+              <div class="card-body p-4">
+                <div
+                  class="
+                    d-flex
+                    justify-content-around
+                    text-center
+                    mb-4
+                    pb-3
+                    pt-2
+                  "
+                >
+                  <div class="flex-column">
+                    <p class="mb-0 days"><strong>Thu</strong></p>
+                    <p class="small temperature">
+                      <strong>31°</strong> <span> 24°</span>
+                    </p>
+                    <img
+                      class="img-fluid"
+                      src="src/sun.png"
+                      alt="partiallyCloudy"
+                      width="40px"
+                    />
+                  </div>
+                  <div class="flex-column">
+                    <p class="mb-0 days"><strong>Fri</strong></p>
+                    <p class="small temperature">
+                      <strong>33°</strong><span> 24°</span>
+                    </p>
+                    <img
+                      class="img-fluid"
+                      src="src/partially cloudy.png"
+                      alt="partiallyCloudy"
+                      width="40px"
+                    />
+                  </div>
+                  <div class="flex-column">
+                    <p class="mb-0 days"><strong>Sat</strong></p>
+                    <p class="small temperature">
+                      <strong>33°</strong><span> 21°</span>
+                    </p>
+                    <img
+                      class="img-fluid"
+                      src="src/sun.png"
+                      alt="partiallyCloudy"
+                      width="40px"
+                    />
+                  </div>
+                  <div class="flex-column">
+                    <p class="mb-0 days"><strong>Sun</strong></p>
+                    <p class="small temperature">
+                      <strong>33°</strong><span> 21°</span></p>
+                      <img
+                        class="img-fluid"
+                        src="src/smiling sun.png"
+                        alt="partiallyCloudy"
+                        width="40px"
+                      />
+                    </p>
+                  </div>
+
+                  <div class="flex-column">
+                    <p class="mb-0 days"><strong>Mon</strong></p>
+                    <p class="small temperature">
+                      <strong>35°</strong><span> 19°</span>
+                    </p>
+                    <img
+                      class="img-fluid"
+                      src="src/sun.png"
+                      alt="partiallyCloudy"
+                      width="40px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js">
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>

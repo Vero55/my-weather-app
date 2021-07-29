@@ -1,4 +1,102 @@
+body {
+  font-family: "Hind Siliguri", sans-serif;
+  background: #a18ece;
+  background: -webkit-linear-gradient(to right, #a18ece, #ce84a3, #a18ece);
+  background: linear-gradient(to right, #a18ece, #ce84a3, #a18ece);
+}
+
+.gradient-custom {
+  background: lavender;
+  background: -webkit-linear-gradient(to right, #b6dcef, lavender);
+  background: linear-gradient(to right, #b6dcef, lavender);
+}
+.search-bar .search-bar:focus {
+  background-color: transparent;
+  border-color: #bfdef1;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+}
+.searchBox:hover input {
+  cursor: pointer;
+}
+.city-name {
+  color: #346cff;
+  font-size: 20px;
+}
+.city-search {
+  border-color: #e6e6fa;
+  background-color: #e6e6fa;
+  color: #346cff;
+}
+.btn-search {
+  background: #4073fc;
+  color: white;
+}
+.btn-search:hover {
+  background: #893dff;
+  border-color: #893dff;
+  color: white;
+  cursor: pointer;
+}
+.btn-myLocation,
+.btn-myLocation:hover {
+  background-color: transparent;
+  border-style: none;
+}
+.btn-myLocation:hover {
+  cursor: pointer;
+}
+.btn-Celsius,
+.btn-Farenheit {
+  font-size: 20px;
+  color: #346cff;
+}
+.btn-Celsius:hover,
+.btn-Farenheit:hover {
+  color: rgb(206, 44, 84);
+  text-decoration: underline rgb(206, 44, 84);
+}
 h1 {
-  text-align: center;
-  color: blueviolet;
+  color: #fc9696;
+  font-size: 85px;
+}
+h2 {
+  font-size: 25px;
+  color: #346cff;
+  margin-bottom: 20px;
+}
+h2::first-letter {
+  text-transform: capitalize;
+}
+h3,
+#temperature-description {
+  color: #8a2be2;
+  font-size: 20px;
+  margin-top: -10px;
+}
+.dateToday {
+  color: #8a2be2;
+  font-size: 15px;
+}
+.humidity,
+.wind,
+.realFeel {
+  color: #346cff;
+  margin-top: -18px;
+}
+.realFeel {
+  color: #fc9696;
+  margin-top: -18px;
+}
+.days {
+  color: #8a2be2;
+  font-size: 20px;
+}
+.temperature {
+  color: #fc9696;
+  font-size: 20px;
+}
+span {
+  color: #346cff;
 }
