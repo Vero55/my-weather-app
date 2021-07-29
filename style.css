@@ -100,3 +100,8 @@ h3,
 span {
   color: #346cff;
 }
+#GitHub-code {
+  display: block;
+  margin: -50px auto;
+  text-align: center;
+}
